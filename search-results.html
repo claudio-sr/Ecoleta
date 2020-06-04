@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado da pesquisa</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/search-results.css">
+
+    <link rel="stylesheet" href="./styles/responsive.css">
+
+</head>
+<body>
+    <div id="page-search-results">
+        
+        <header>
+            <img src="./icones/logo.svg" alt="Logomarca">
+            <a href="/">
+                <span></span>
+                Voltar para home
+            </a>
+        </header>
+
+        <main>
+            
+            <h4>
+                <strong>2 postos</strong> encontrados
+            </h4>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAkFBMVEX///8AplEFwVkApU8Fw1kAo0kApFEAoUUApEwAnzwAoEIEt1YDtFUBqlIAnz8FwFkCrVMDtlYEu1f2/PlHt3Tw+vQarFvc8eTN69iu3cC24cbT7d2Ay5zA5c3m9eyIzqKT0qoysWel2bhuxI+64MhnwopTu3yd1rIAmi9LuHaq3Lzh8+jG59I7tG1rwoyCy50k9weAAAALD0lEQVR4nO2dCXPiPAyG6zrORQjhhnAFKLBtof3//+6zc0DIZcXAF2fXz8zO7M5sGPwiybIsO29vCoVCoVAoFAqFQqFQKBQKhUKhUCj+Tb53p9187n+sVufZYsr4pn8WjNlsdj6fVyEfHx++788pX7vd7jRfNP29X8dsZBkxdjlGHtver5v+8i9h/emaSBBMrE3T3/8FzC2miNMJGSR4YFmMS9MjeDobCyPU13LAbYVsmx7Dk9m4SPc07T2LNtDhlnJoehRPxbeQ3skrwkSBew+yVk2P44mMXawPCiWhosA1wbjpgTyRkVliJXW957fpkTyNuYucMklqes9302N5EkMDoXJJKHBNzL9lQv4hpcEkMpQO3Htcv+nRPIWFhbxKM3nXunBLIU0P5ylMsF6pCKUHNxTS1jCbXrDtjKoAGxtKHy5KW8PszA7G8V+HNifA1vUec9To0MTpGtYxSjr3pDw1EfOetobZDUGmbW7Wb98W6gIkedccsCa42/ToxFi4KCx6HEc0qQdIUivFN1paSqGTTa/T1THmzcNX54Frgqx2Ft2o8/Q1recgvQczky4iGKqJ+dn08ISYumEc0bTKDPYmiaPbuwlYFLedRQPmPOFoYZ6j05XMzIJqglHTwxMidB6QHpHnsBixJ1BRjKDp8YkQOw9MEkcPBzk04d4z5n0BGUmcB+Q5OKo/r1yoJuax4eEJERD+OufmOdPooSPYe9xzs8MTAuw8Wke/ZmFDG+o9eNLo6ASBOk8vPb65DTUU49Tg2EQBOo/mIWt2e2oE3T/FbQyzMOehnkP2qafGLtR7SBu3wGDOk13nnsDeY7WwBQPiPNRzsjPIFug92G7hBvI333mY52Rd4BuW4hM7aGJQjwJwHjp/DLOPbQy+Iqa1zD3XCrjOQz3HKKgkchfIpnVo4aQTQp2nsj7NNruMaf65RbX3YPez4KG2sOU4z4ANsGD2WFak+DS0zvJPtIcTZ29HYxVHq2CIuNR7zElLy/YJPOehdKko+eXcucx78KilW143495yy/Y0zOKC/qNDmfdg274s/dbFk8C2DvFEyXOeRJScPwyLNWE7YxgTw7Uvv20SZkhXLMTehX9fW5XOE3Y+vnvUfb6yn+JnykumQfVwBn2vq4fCmLEw7XClsKpKZ4fwZyxxnlCM3qDjeIgOkf7yf3Ir/2M6xcfuaDpBei98LiPMSH5hpnF4xNbyLe88UVMsE6PL1EB0VLZrXPanXEhJLZCxPTm/zezr9ln8EXfCbGQW5lYAIcRPOU9sGn0vNI1YDTJa7mYlu3q7eIGMDTSn/zxk+gTDj6PCIPmFuSszu6PxJ+sCDcVwYjFwqIb5+fs1q07QL6G6JCqoDQsjUyyMdxXmj4y16/u1imlfMPJiP4nUsLrHzXwBWa4wGyPuJprCvspnsMgAHdY+aclYkNxl17SRRJFtUDX8RY3lbOBa+0Q83jKBRhg6N8mY9Q+NwqTcnBwCf1p/cX+4hgduIZPtm22lXCwXL95I8PAHbzjtTlpXd+Wsz65LlinG5NHSKanO/eha0to9ZQhP51hWSsXW/qGy2MquXiPoSMpQQqlqliDG/IFPpslJVYRl9TpJzWRbWTO0L8IJ1ZDbKUg/Xsr6LG9f0wyzfRHoDF/dUJrdOZMGfveIYYo1XdHkhFdxuPUmyEQA2ILA7qdADkGTE273ZE+XsMEauNFrWkHtj14SfpOt5kjY+QdtRhPY+q5OThJR5GtJAe5o0tyqtvPQ5ATQLqj1dfuR6f4FfAJ3vkn9uedo8iJsYijmCwYmzhnanWfVTiPG3HNisSYDXa7eJWgPtMAxrZNRfZzwJkpXqpNx0DY07NbPNqncwP5JuQwF2uxL6h8zWVQeTr4XRaazPZB0TdRMaHICUyTKUaTp54J2tYq0yRvQE0DMeZ5RvnoOX1Azset/9ocdR1iIMDTBl6VuX1pKypqJQASknx2eA9IgJy01XZpcFuo6AjMlTU4cTXvveDrk+CkNssbzhyfCGpiviZTCaHLCBAmfB2ki4J6vYApLToTmyTgXJAZddfMNRR47+YbZiZHrp+DDzuSahmvuV0MMSN3kiSdDkCZCZ/j2tmFdTmEBjU5u3NWxRPMOaLEjspAfWnv/muUhrqGw8r0s57E3gHKSkFHfZb0+t4wy0HG+K7shyrb/7szk8RZO3mKQrottgZj1Iqp6fB8wkwwf1YaidXRTopMaJV2KaTPJ1o9FtnqqDUVDcm1n8OonOPsDrv8IWPnKrTAUuigWqGu+kupt0fzJV98QOaW1rTCUno6ILAE2YloZZvPXqu0JMurvfp3L60t0Hn5CGH8uP1Uhxc01QtBkwxQIuxezxFC0gS7ffXZVp6Xzu5Z02dhFpH7OOSszFLZfLF8f6Km8sJQvCPo0UXeQXT/p/DRRoSQdXcr7MUsz/II1yJ5dd0h/2toRYGEVGop0+10xs7KlYEHWgMLmCZEL6I6xodzf4OzIekNZSQnSzG+ar8POTq2nY1x3+lzbyOn1eoNBp9NxHMfzvC67706+ABsxLjYUPPpZLoPTl786L6brMRPhIyrGs2ycM5bhcD2dzlb+1yn4Xf4cR1vmoTqDa4tyULLNg01CSHzRv+u6NmE/bFg0ozZv3LdcLdLj75Lw/0evAaCfYZpmyUFB8tPQkPmgom8cWbee+nHZTz1IplA3Xcyf/rkbP/gyFInvuCi6+8dL4mAUBPpxEEgmj/tzowvwBQ53SH3lVP72kru+1tRMccs/kX07wCOmiZzzcEK+W4m3scni7C3JnwlpIlt/UoZsdYl/Awpb41+TOiFNcoUI2choAtj/pnH2mpefRTSR/m6Y++oS7JYpdE3yP4C78WkKckLZuLvmBtRNQ+MsjnMuX0ATiefhhHR1CdhNQ+MsNsORzetrIs2OThWp5mFw05WHopI7tJMlhUxtfaWkqkswRd6jOMvCQn1NJJ+HE67VJaiZMFCY5OeOnfKQfh5OSKpLNSRh+ax1rirWFZOv9EpK3FRdx0zCu5XccQC+FzRCmjYCPlF1qY4k0T0o22XNt+W16Abz8CxPLTN5D+MsrimJZBt/1QS81xAVUk8QVHTfncwgDJ+Ir4ZS481ekSSSnp8tYQU4wpcXpVNLEll618B8Vp+SLtakxtvOUAuvpIa+UCUtiVPLd1r4hgjgi3dSktR4WRNDwv1hHmP+HX73ktAIC7/zn87DUp4757ABvMjrXhJjfwSLguW8n4AHgb5ohtGjv/yI1+6UQqZTbjXY1TiO9I7CHh3w62ZaNw8nTKAvrgrz+u64hibyncMHsgK/HoImJjabRgo3VwuQtY0AwKXiHb13kujxDinUTKRtI+CzqL4WNJGE5mrxZgb0gH8b5+GEg4mK3oJ+LwmdhZPmguLr3bJgyRph67G26CCrT9aHiUlSBwFtA2K3vZ7D8KkoutcrtxV2tdptvxhyOoqY7Zbk7W2KDERVGWhZElHSkwj/xBgmD970Jgcbi7CLpD3Pcfr9TqfTZ205Tpz208TEnFwHObZMkzV6XTFu2Kzzy9oG7anAVjHeEJvkOtG0WBJMbvu94+PPfr9fUn5/N5sgCE6n3W739TX3P1bn82zx/ReYyJVZcNyyA7EJdrSVzGr1LQ+YDzMcjtcRNsv6w8SkbcWy1zHBHY1tc+Uvcf93OZhO2N7XhkaJ/4uAeD092zD8jzM3ujT7al+V+ZWwRliZTr7KwNhFGP1N2cYzMLD9d2SkT+QifVfr/89BznNZjaIcR6FQKBQKhUKhUCgUCoVCoVAoFAoFhP8AU5u6Mn2+4ToAAAAASUVORK5CYII=" alt="Colectoria">
+                    <h1>Colectoria</h1>
+                    <h3>Resíduos Eletrônicos, Lâmpadas</h3>
+                    <p>
+                        Rio do Sul, Santa Catarina <br/>
+                        Alexandre Grande, Jandin das flores <br/>
+                        Nº 1300
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSTWZC_EuX6pkkpgCas_4WJmKsmwimMEviayzW8aIHLkNZI6Tjx&usqp=CAU" alt="Papersider">
+                    <h1>Colectoria</h1>
+                    <h3>Papéis e Papelão</h3>
+                    <p>
+                        Rio do Sul, Santa Catarina <br/>
+                        Alexandre Grande, Jandin das flores <br/>
+                        Nº 1300
+                    </p>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="./scripts/create-point.js"></script>
+</body>
+
+</html>
